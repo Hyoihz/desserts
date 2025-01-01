@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Frontend Mentor | Product list with cart</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="inner-container">
+                    <div class="desserts">
+                        <h1 class="desserts__title">Desserts</h1>
+                        <div class="dessert__cards"></div>
+                    </div>
+                    <div class="your-cart">
+                        <div class="your-cart__wrapper">
+                            <h2 class="your-cart__title">
+                                Your Cart (<span class="your-cart__quantity"
+                                    >0</span
+                                >)
+                            </h2>
+                            <div class="your-cart__empty">
+                                <div class="your-cart__empty-img-wrapper">
+                                    <img
+                                        src="./assets/images/illustration-empty-cart.svg"
+                                        alt="empty cart illustration"
+                                        class="your-cart__empty-img"
+                                    />
+                                </div>
+                                <p class="your-cart__empty-text">
+                                    Your added items will appear here
+                                </p>
+                            </div>
+                            <div class="your-cart__not-empty">
+                                <div class="your-cart__order"></div>
+                                <div class="your-cart__total">
+                                    <p class="your-cart__total-title">
+                                        Order Total
+                                    </p>
+                                    <p class="your-cart__total-cost">$0.00</p>
+                                </div>
+                                <div class="your-cart__delivery">
+                                    <div class="your-cart__delivery-wrapper">
+                                        <img
+                                            src="./assets/images/icon-carbon-neutral.svg"
+                                            alt="tree icon"
+                                        />
+                                        <p class="your-cart__delivery-info">
+                                            This is a
+                                            <span
+                                                class="your-cart__delivery-info-emphasis"
+                                                >carbon-neutral</span
+                                            >
+                                            delivery
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="your-cart__confirm">
+                                    Confirm Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-confirmed">
+                        <div class="order-confirmed__overlay">
+                            <div class="order-confirmed__modal">
+                                <div class="order-confirmed__wrapper">
+                                    <img
+                                        src="./assets/images/icon-order-confirmed.svg"
+                                        alt="check icon"
+                                        class="order-confirmed__icon"
+                                    />
+                                    <div class="order-confirmed__header">
+                                        <h2 class="order-confirmed__title">
+                                            Order Confirmed
+                                        </h2>
+                                        <p class="order-confirmed__subtitle">
+                                            We hope you enjoy your food!
+                                        </p>
+                                    </div>
+                                    <div class="order-confirmed__orders">
+                                        <div
+                                            class="order-confirmed__orders-wrapper"
+                                        ></div>
+                                        <div class="order-confirmed__total">
+                                            <p
+                                                class="order-confirmed__total-title"
+                                            >
+                                                Order Total
+                                            </p>
+                                            <p
+                                                class="order-confirmed__total-cost"
+                                            >
+                                                $11.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button class="order-confirmed__new-order">
+                                        Start New Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
